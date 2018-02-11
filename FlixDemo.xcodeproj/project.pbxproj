@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		797D2C3AEFF122FA689BF64B /* Pods_FlixDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B302C7D658564CA45EC0440D /* Pods_FlixDemoTests.framework */; };
+		8E14D4A5202BBBB2003DB9D5 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E14D4A4202BBBB2003DB9D5 /* DetailViewController.swift */; };
 		8E9F85962022CEA0006C169B /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9F85952022CEA0006C169B /* MovieCell.swift */; };
 		8ED2B2E520219FCD0012C935 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED2B2E420219FCD0012C935 /* AppDelegate.swift */; };
 		8ED2B2EA20219FCD0012C935 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ED2B2E820219FCD0012C935 /* Main.storyboard */; };
@@ -20,19 +21,16 @@
 		8ED2B3262021A9F60012C935 /* now_playing_tabbar_item@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED2B3142021A9F40012C935 /* now_playing_tabbar_item@2x.png */; };
 		8ED2B3272021A9F60012C935 /* launch_image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED2B3152021A9F40012C935 /* launch_image@2x.png */; };
 		8ED2B3282021A9F60012C935 /* now_playing_tabbar_item@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED2B3162021A9F40012C935 /* now_playing_tabbar_item@3x.png */; };
-		8ED2B3292021A9F60012C935 /* ticket_tabbar_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED2B3172021A9F40012C935 /* ticket_tabbar_icon@3x.png */; };
 		8ED2B32A2021A9F60012C935 /* superhero_tabbar_item.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED2B3182021A9F40012C935 /* superhero_tabbar_item.png */; };
 		8ED2B32B2021A9F60012C935 /* launch_image@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED2B3192021A9F40012C935 /* launch_image@3x.png */; };
 		8ED2B32C2021A9F60012C935 /* reel_tabbar_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED2B31A2021A9F50012C935 /* reel_tabbar_icon.png */; };
 		8ED2B32D2021A9F60012C935 /* ticket_tabbar_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED2B31B2021A9F50012C935 /* ticket_tabbar_icon.png */; };
 		8ED2B32E2021A9F60012C935 /* projector_tabbar_item.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED2B31C2021A9F50012C935 /* projector_tabbar_item.png */; };
-		8ED2B32F2021A9F60012C935 /* now_playing_tabbar_item.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED2B31D2021A9F50012C935 /* now_playing_tabbar_item.png */; };
 		8ED2B3302021A9F60012C935 /* reel_tabbar_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED2B31E2021A9F50012C935 /* reel_tabbar_icon@2x.png */; };
 		8ED2B3312021A9F60012C935 /* superhero_tabbar_item@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED2B31F2021A9F50012C935 /* superhero_tabbar_item@2x.png */; };
 		8ED2B3322021A9F60012C935 /* reel_tabbar_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED2B3202021A9F50012C935 /* reel_tabbar_icon@3x.png */; };
 		8ED2B3332021A9F60012C935 /* superhero_tabbar_item@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED2B3212021A9F60012C935 /* superhero_tabbar_item@3x.png */; };
 		8ED2B3342021A9F60012C935 /* launch_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED2B3222021A9F60012C935 /* launch_image.png */; };
-		8ED2B3352021A9F60012C935 /* ticket_tabbar_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED2B3232021A9F60012C935 /* ticket_tabbar_icon@2x.png */; };
 		8ED2B3372021AB370012C935 /* NowPlayingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED2B3362021AB370012C935 /* NowPlayingViewController.swift */; };
 		A78158B513C25A848AA2C3B7 /* Pods_FlixDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3591B4189DDD9C866027814 /* Pods_FlixDemoUITests.framework */; };
 		F5CDAC28D859C14C4B71E968 /* Pods_FlixDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EBD4DB6B6C1DBAB04501985 /* Pods_FlixDemo.framework */; };
@@ -61,6 +59,7 @@
 		4F3F350B2981C9448D878191 /* Pods-FlixDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlixDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlixDemo/Pods-FlixDemo.release.xcconfig"; sourceTree = "<group>"; };
 		7EBD4DB6B6C1DBAB04501985 /* Pods_FlixDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlixDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C48170C19CE8C13BA233B16 /* Pods-FlixDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlixDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlixDemoUITests/Pods-FlixDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8E14D4A4202BBBB2003DB9D5 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		8E1AE5632025A7BE00C0D6D8 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E1AE5652025AC3F00C0D6D8 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E1AE56C2025ACAA00C0D6D8 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,19 +83,16 @@
 		8ED2B3142021A9F40012C935 /* now_playing_tabbar_item@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "now_playing_tabbar_item@2x.png"; path = "../../../Downloads/iOS_flix_assets/now_playing_tabbar_item@2x.png"; sourceTree = "<group>"; };
 		8ED2B3152021A9F40012C935 /* launch_image@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "launch_image@2x.png"; path = "../../../Downloads/iOS_flix_assets/launch_image@2x.png"; sourceTree = "<group>"; };
 		8ED2B3162021A9F40012C935 /* now_playing_tabbar_item@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "now_playing_tabbar_item@3x.png"; path = "../../../Downloads/iOS_flix_assets/now_playing_tabbar_item@3x.png"; sourceTree = "<group>"; };
-		8ED2B3172021A9F40012C935 /* ticket_tabbar_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ticket_tabbar_icon@3x.png"; path = "../../../Downloads/iOS_flix_assets/ticket_tabbar_icon@3x.png"; sourceTree = "<group>"; };
 		8ED2B3182021A9F40012C935 /* superhero_tabbar_item.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = superhero_tabbar_item.png; path = ../../../Downloads/iOS_flix_assets/superhero_tabbar_item.png; sourceTree = "<group>"; };
 		8ED2B3192021A9F40012C935 /* launch_image@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "launch_image@3x.png"; path = "../../../Downloads/iOS_flix_assets/launch_image@3x.png"; sourceTree = "<group>"; };
 		8ED2B31A2021A9F50012C935 /* reel_tabbar_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = reel_tabbar_icon.png; path = ../../../Downloads/iOS_flix_assets/reel_tabbar_icon.png; sourceTree = "<group>"; };
 		8ED2B31B2021A9F50012C935 /* ticket_tabbar_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ticket_tabbar_icon.png; path = ../../../Downloads/iOS_flix_assets/ticket_tabbar_icon.png; sourceTree = "<group>"; };
 		8ED2B31C2021A9F50012C935 /* projector_tabbar_item.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = projector_tabbar_item.png; path = ../../../Downloads/iOS_flix_assets/projector_tabbar_item.png; sourceTree = "<group>"; };
-		8ED2B31D2021A9F50012C935 /* now_playing_tabbar_item.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = now_playing_tabbar_item.png; path = ../../../Downloads/iOS_flix_assets/now_playing_tabbar_item.png; sourceTree = "<group>"; };
 		8ED2B31E2021A9F50012C935 /* reel_tabbar_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "reel_tabbar_icon@2x.png"; path = "../../../Downloads/iOS_flix_assets/reel_tabbar_icon@2x.png"; sourceTree = "<group>"; };
 		8ED2B31F2021A9F50012C935 /* superhero_tabbar_item@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "superhero_tabbar_item@2x.png"; path = "../../../Downloads/iOS_flix_assets/superhero_tabbar_item@2x.png"; sourceTree = "<group>"; };
 		8ED2B3202021A9F50012C935 /* reel_tabbar_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "reel_tabbar_icon@3x.png"; path = "../../../Downloads/iOS_flix_assets/reel_tabbar_icon@3x.png"; sourceTree = "<group>"; };
 		8ED2B3212021A9F60012C935 /* superhero_tabbar_item@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "superhero_tabbar_item@3x.png"; path = "../../../Downloads/iOS_flix_assets/superhero_tabbar_item@3x.png"; sourceTree = "<group>"; };
 		8ED2B3222021A9F60012C935 /* launch_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = launch_image.png; path = ../../../Downloads/iOS_flix_assets/launch_image.png; sourceTree = "<group>"; };
-		8ED2B3232021A9F60012C935 /* ticket_tabbar_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ticket_tabbar_icon@2x.png"; path = "../../../Downloads/iOS_flix_assets/ticket_tabbar_icon@2x.png"; sourceTree = "<group>"; };
 		8ED2B3362021AB370012C935 /* NowPlayingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingViewController.swift; sourceTree = "<group>"; };
 		B302C7D658564CA45EC0440D /* Pods_FlixDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlixDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6F20959AFC08BE22AC0D7BF /* Pods-FlixDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlixDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlixDemo/Pods-FlixDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -160,6 +156,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8E14D4A2202BBACD003DB9D5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8ED2B3362021AB370012C935 /* NowPlayingViewController.swift */,
+				8E14D4A4202BBBB2003DB9D5 /* DetailViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8E14D4A3202BBB0A003DB9D5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8E9F85952022CEA0006C169B /* MovieCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		8ED2B2D820219FCD0012C935 = {
 			isa = PBXGroup;
 			children = (
@@ -185,14 +198,14 @@
 		8ED2B2E320219FCD0012C935 /* FlixDemo */ = {
 			isa = PBXGroup;
 			children = (
-				8ED2B3362021AB370012C935 /* NowPlayingViewController.swift */,
+				8E14D4A3202BBB0A003DB9D5 /* Views */,
+				8E14D4A2202BBACD003DB9D5 /* ViewControllers */,
 				8ED2B2E420219FCD0012C935 /* AppDelegate.swift */,
 				8ED2B2E820219FCD0012C935 /* Main.storyboard */,
 				8ED2B3152021A9F40012C935 /* launch_image@2x.png */,
 				8ED2B2EB20219FCD0012C935 /* Assets.xcassets */,
-				8ED2B3222021A9F60012C935 /* launch_image.png */,
 				8ED2B3192021A9F40012C935 /* launch_image@3x.png */,
-				8ED2B31D2021A9F50012C935 /* now_playing_tabbar_item.png */,
+				8ED2B3222021A9F60012C935 /* launch_image.png */,
 				8ED2B3142021A9F40012C935 /* now_playing_tabbar_item@2x.png */,
 				8ED2B3162021A9F40012C935 /* now_playing_tabbar_item@3x.png */,
 				8ED2B31C2021A9F50012C935 /* projector_tabbar_item.png */,
@@ -205,11 +218,8 @@
 				8ED2B31F2021A9F50012C935 /* superhero_tabbar_item@2x.png */,
 				8ED2B3212021A9F60012C935 /* superhero_tabbar_item@3x.png */,
 				8ED2B31B2021A9F50012C935 /* ticket_tabbar_icon.png */,
-				8ED2B3232021A9F60012C935 /* ticket_tabbar_icon@2x.png */,
-				8ED2B3172021A9F40012C935 /* ticket_tabbar_icon@3x.png */,
 				8ED2B2ED20219FCD0012C935 /* LaunchScreen.storyboard */,
 				8ED2B2F020219FCD0012C935 /* Info.plist */,
-				8E9F85952022CEA0006C169B /* MovieCell.swift */,
 			);
 			path = FlixDemo;
 			sourceTree = "<group>";
@@ -353,14 +363,11 @@
 				8ED2B3262021A9F60012C935 /* now_playing_tabbar_item@2x.png in Resources */,
 				8ED2B3272021A9F60012C935 /* launch_image@2x.png in Resources */,
 				8ED2B3342021A9F60012C935 /* launch_image.png in Resources */,
-				8ED2B3352021A9F60012C935 /* ticket_tabbar_icon@2x.png in Resources */,
 				8ED2B2EF20219FCD0012C935 /* LaunchScreen.storyboard in Resources */,
 				8ED2B3282021A9F60012C935 /* now_playing_tabbar_item@3x.png in Resources */,
 				8ED2B3322021A9F60012C935 /* reel_tabbar_icon@3x.png in Resources */,
 				8ED2B32C2021A9F60012C935 /* reel_tabbar_icon.png in Resources */,
-				8ED2B3292021A9F60012C935 /* ticket_tabbar_icon@3x.png in Resources */,
 				8ED2B3312021A9F60012C935 /* superhero_tabbar_item@2x.png in Resources */,
-				8ED2B32F2021A9F60012C935 /* now_playing_tabbar_item.png in Resources */,
 				8ED2B32D2021A9F60012C935 /* ticket_tabbar_icon.png in Resources */,
 				8ED2B2EC20219FCD0012C935 /* Assets.xcassets in Resources */,
 				8ED2B3332021A9F60012C935 /* superhero_tabbar_item@3x.png in Resources */,
@@ -548,6 +555,7 @@
 				8ED2B3372021AB370012C935 /* NowPlayingViewController.swift in Sources */,
 				8ED2B2E520219FCD0012C935 /* AppDelegate.swift in Sources */,
 				8E9F85962022CEA0006C169B /* MovieCell.swift in Sources */,
+				8E14D4A5202BBBB2003DB9D5 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
