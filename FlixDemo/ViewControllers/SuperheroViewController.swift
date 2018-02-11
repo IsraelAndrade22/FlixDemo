@@ -18,6 +18,16 @@ class SuperheroViewController: UIViewController, UICollectionViewDataSource {
         super.viewDidLoad()
 
         collectionView.dataSource = self;
+        
+        let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
+        layout.minimumInteritemSpacing = 5
+        layout.minimumLineSpacing = layout.minimumInteritemSpacing
+        let cellsPerLine :CGFloat = 2
+        let interItemSpacingTotal = layout.minimumInteritemSpacing * (cellsPerLine - 1)
+        let width = collectionView.frame.size.width / cellsPerLine - interItemSpacingTotal / cellsPerLine
+        layout.itemSize = CGSize(width: width, height: width * 3 / 2)
+        
+        
         fetchMovies()
     }
     
@@ -37,7 +47,7 @@ class SuperheroViewController: UIViewController, UICollectionViewDataSource {
     func fetchMovies() {
         //self.activityIndicator.startAnimating()
         //URL for the endpoint
-        let url = URL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=4f50bbea03d173973faf3579523a4ca9")!
+        let url = URL(string: "https://api.themoviedb.org/3/movie/284053/similar?api_key=4f50bbea03d173973faf3579523a4ca9")!
         let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
         
         let session = URLSession(configuration: .default, delegate: nil, delegateQueue: OperationQueue.main)
@@ -51,6 +61,7 @@ class SuperheroViewController: UIViewController, UICollectionViewDataSource {
                 let movies = dataDictionary["results"] as! [[String:Any]]
                 self.movies = movies
                 self.collectionView.reloadData()
+                print(movies)
                 //self.refreshControl.endRefreshing()
                 //self.activityIndicator.stopAnimating()
                 
